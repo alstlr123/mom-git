@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>| 동료사원시스템 메뉴얼</title>
+    <style>
+      /* 전체 배경 및 레이아웃 */
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+      }
+
+      /* 상단 헤더 스타일 */
+      header {
+        width: 100%;
+        background-color: #ffffff; /* 헤더 배경 흰색 */
+        padding: 0 20px; /* 양옆 여백 */
+        display: flex;
+        align-items: center;
+        height: 48px; /* 헤더 높이 조정 */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+        position: fixed;
+        top: 0px;
+        left: 0;
+        z-index: 1000;
+      }
+
+      /* 로고 이미지 스타일 */
+      .logo {
+        width: 31px;
+        height: 31px;
+        margin-right: 10px; /* 로고와 텍스트 간격 */
+      }
+
+      /* 헤더 텍스트 스타일 */
+      .header-title {
+        font-size: 17px; /* 텍스트 크기 조정 */
+        font-weight: bold;
+        color: #333333; /* 텍스트 색상 */
+        line-height: 1; /* 텍스트가 중앙 정렬되도록 조정 */
+      }
+
+      /* 내용 섹션 */
+      .content {
+        margin-top: 60px; /* 고정된 헤더 아래 공간 확보 */
+        text-align: center;
+        width: 100%;
+        max-width: 800px;
+      }
+
+      img {
+        width: 90%;
+        max-width: 700px;
+        height: auto;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+
+      /* 모바일 최적화 */
+      @media (max-width: 600px) {
+        .header-title {
+          font-size: 14px; /* 모바일에서 텍스트 크기 조정 */
+        }
+
+        .logo {
+          width: 28px; /* 로고 크기 축소 */
+          height: 28px;
+        }
+
+        .content {
+          margin-top: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 상단 헤더 바 -->
+    <header>
+      <img src="/images/logo.jpg" alt="로고" class="logo" />
+      <div class="header-title">동료사원시스템 메뉴얼</div>
+    </header>
+
+    <!-- 이미지 콘텐츠 -->
+    <div class="content">
+      <img src="/images/image0.jpg" alt="이미지 0" />
+      <img src="/images/image1.jpg" alt="이미지 1" />
+      <img src="/images/image2.jpg" alt="이미지 2" />
+      <img src="/images/image3.jpg" alt="이미지 3" />
+    </div>
+  </body>
+</html>
